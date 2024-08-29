@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freakin Awesome Tours</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Freakin Awesome Tours</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tours">Tours</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#ads">Advertise</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <h2>Explore the World with Freakin Awesome Tours</h2>
+            <p>Your next adventure awaits!</p>
+            <button onclick="bookNow()">Book Now</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Freakin Awesome Tours is all about creating unforgettable experiences for young adventurers, influencers, and party lovers. Join us for an experience of a lifetime!</p>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="tours">
+        <h2>Our Tours</h2>
+        <div class="tour-list">
+            <!-- Tour Items Here -->
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking">
+        <h2>Book Your Tour</h2>
+        <form id="booking-form" action="process_booking.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="tour">Select Tour:</label>
+            <select id="tour" name="tour" required>
+                <option value="beach-party">Beach Party</option>
+                <option value="city-exploration">City Exploration</option>
+                <option value="jungle-adventure">Jungle Adventure</option>
+                <!-- More options here -->
+            </select>
+            
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Checkout Section -->
+    <section id="checkout">
+        <h2>Checkout</h2>
+        <form id="checkout-form" action="process_payment.php" method="POST">
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required>
+            
+            <label for="exp-date">Expiration Date:</label>
+            <input type="text" id="exp-date" name="exp-date" required>
+            
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+            
+            <label for="billing-address">Billing Address:</label>
+            <input type="text" id="billing-address" name="billing-address" required>
+            
+            <button type="submit">Pay Now</button>
+        </form>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Our Blog</h2>
+        <div class="blog-posts">
+            <!-- Blog Posts Here -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form" action="send_message.php" method="POST">
+            <label for="contact-name">Your Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+            
+            <label for="contact-email">Your Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map">
+        <h2>Our Locations</h2>
+        <div id="map-container">
+            <!-- Google Maps Embed -->
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450"></iframe>
+        </div>
+    </section>
+
+    <!-- Advertisements Section -->
+    <section id="ads">
+        <h2>Advertise with Us</h2>
+        <div class="ads-container">
+            <!-- Ad Spaces Here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Freakin Awesome Tours. All rights reserved.</p>
+    </footer>
+</body>
+</html>
